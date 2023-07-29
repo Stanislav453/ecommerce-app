@@ -1,0 +1,106 @@
+@import "../../scss/variables";
+
+// * {
+//     outline: 1px solid red;
+// }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background-color: $--background-c-nav;
+
+  & > * {
+    flex: 1;
+  }
+}
+
+.nav-link {
+  font-size: $--font-s-nav-link;
+  font-weight: 900;
+  text-transform: uppercase;
+  transform: scale(1);
+  transition: $--transition-transform;
+
+  &:hover {
+    transform: scale(1.01);
+    transition: $--transition-transform;
+  }
+}
+
+.nav-li {
+  display: flex;
+  justify-content: space-between;
+  font-family: $--font-f-nav-link;
+
+  li {
+    border: 5px solid #fff;
+  }
+
+  li a {
+    padding: 1rem 1.5rem;
+    font-size: $--font-s-nav-a-b;
+    transition: $--transition-background-c;
+    background-color: $--background-c-nav;
+
+    &:hover {
+      transition: $--transition-background-c;
+      background-color: $--background-nav-li-a;
+    }
+  }
+}
+
+.nav-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+
+  button {
+    display: flex;
+    font-size: $--font-s-nav-a-b;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      padding: 0.2rem 0.8rem;
+      border: 1px solid #000;
+    }
+
+    &:nth-child(2) {
+      background-color: $--background-c-nav;
+      transition: $--transition-background-c;
+
+      &:hover {
+        background-color: darken($--background-c-nav, 30%);
+        transition: $--transition-background-c;
+      }
+    }
+
+    &:nth-child(1) {
+      color: $--background-c-nav;
+      background-color: $--color-font-basic;
+      transition: $--transition-background-c;
+
+      &:hover {
+        background-color: lighten($--color-font-basic, 30%);
+        transition: $--transition-background-c;
+      }
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      font-size: clamp(1.2rem, 10vw, 1.5rem);
+      transform: scale(1);
+      transition: $--transition-transform;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: $--transition-transform;
+      }
+    }
+  }
+}

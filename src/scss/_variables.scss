@@ -1,0 +1,19 @@
+//COLOR
+$--background-c-body: #d7d6d6;
+$--background-c-nav: #fff;
+$--background-nav-li-a: #e4e0e0;
+$--color-font-basic: #0a0a0a;
+
+
+//FONT-FAMILY
+$--font-f-nav-link: "Noto Sans", sans-serif;
+$--font-f-hight-text: "Noto Sans", sans-serif;
+$--font-f-basic-text: "Noto Sans", sans-serif;
+
+//FONT-SIZE
+$--font-s-nav-link: clamp(1.2rem, 10vw, 2rem);
+$--font-s-nav-a-b: clamp(1rem, 10vw, 1.2rem);
+
+//TRANSITION
+$--transition-background-c: 0.3s ease-in-out;
+$--transition-transform: 0.3s ease-in-out;
